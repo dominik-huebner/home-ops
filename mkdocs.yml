@@ -1,0 +1,36 @@
+site_name: Homelab Infrastructure & Operations
+site_description: Homelab Infrastructure Documentation
+site_author: Dominik Hübner
+site_url: https://docs.dhuebner.dev
+
+repo_url: https://github.com/dominik-huebner/home-ops
+repo_name: dominik-huebner/home-ops
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to Dark-Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Light-Mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.action.view
+
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
